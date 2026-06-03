@@ -7,8 +7,7 @@ Portal Aplikasi Pendidikan PAUD ATTHOHIRIYYAH.
 Pastikan komputer Anda telah terinstal:
 - PHP (versi 8.2 atau lebih baru)
 - Composer
-- Node.js & NPM
-- SQLite (untuk database default)
+- SQLite (untuk database default) atau MySQL/MariaDB
 
 ## Instalasi
 
@@ -23,35 +22,30 @@ Pastikan komputer Anda telah terinstal:
    composer install
    ```
 
-3. **Instal Dependensi Node.js:**
-   ```bash
-   npm install
-   ```
-
-4. **Setup Environment:**
+3. **Setup Environment:**
    Salin file contoh konfigurasi dan atur *environment* Anda:
    ```bash
    cp .env.example .env
    ```
-   Buka file `.env` dan sesuaikan konfigurasi database jika diperlukan (default menggunakan SQLite).
+   Buka file `.env` dan sesuaikan konfigurasi database (DB_CONNECTION, DB_HOST, dll) sesuai dengan database yang Anda gunakan.
 
-5. **Generate App Key:**
+4. **Generate App Key:**
    ```bash
    php artisan key:generate
    ```
 
 ## Setup Database
 
-1. **Buat File Database (Jika menggunakan SQLite):**
-   Pastikan file `database/database.sqlite` ada. Jika belum, Anda bisa membuatnya:
+1. **Migrasi Database:**
+   Jalankan perintah berikut untuk membuat tabel:
    ```bash
-   touch database/database.sqlite
+   php artisan migrate
    ```
 
-2. **Jalankan Migrasi & Seeder:**
-   Jalankan perintah berikut untuk membuat tabel dan mengisi data awal:
+2. **Seeder Data (Opsional):**
+   Untuk mengisi data awal, jalankan:
    ```bash
-   php artisan migrate --seed
+   php artisan db:seed
    ```
 
 ## Menjalankan Aplikasi
@@ -61,11 +55,5 @@ Pastikan komputer Anda telah terinstal:
    php artisan serve
    ```
 
-2. **Jalankan Vite (untuk aset CSS/JS):**
-   Buka terminal baru, lalu jalankan:
-   ```bash
-   npm run dev
-   ```
-
-3. **Akses Aplikasi:**
+2. **Akses Aplikasi:**
    Buka browser dan akses `http://localhost:8000`.
