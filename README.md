@@ -24,9 +24,16 @@ Pastikan komputer Anda telah terinstal:
 
 3. **Setup Environment:**
    Salin file contoh konfigurasi dan atur *environment* Anda:
-   ```bash
-   cp .env.example .env
-   ```
+   
+   - **Linux/macOS:**
+     ```bash
+     cp .env.example .env
+     ```
+   - **Windows:**
+     ```cmd
+     copy .env.example .env
+     ```
+
    Buka file `.env` dan sesuaikan konfigurasi database (DB_CONNECTION, DB_HOST, dll) sesuai dengan database yang Anda gunakan.
 
 4. **Generate App Key:**
