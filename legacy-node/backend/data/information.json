@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1707628800000,
+    "title": "Pengumuman Libur Sekolah",
+    "description": "Sekolah akan libur pada tanggal 21-25 Februari 2025 untuk memperingati Hari Raya Idul Fitri. Kegiatan belajar mengajar akan dimulai kembali pada tanggal 26 Februari 2025. Mohon orang tua memastikan anak menggunakan waktu libur untuk beristirahat dan berkualitas bersama keluarga.",
+    "category": "Artikel",
+    "image": null,
+    "author": "Admin",
+    "userId": null,
+    "time": "2025-02-09T08:00:00.000Z"
+  },
+  {
+    "id": 1707542400000,
+    "title": "Penerimaan Siswa Baru Tahun 2025/2026",
+    "description": "PPDB (Penerimaan Peserta Didik Baru) untuk tahun ajaran 2025/2026 sudah dibuka. Pendaftaran dapat dilakukan melalui halaman ppdb.html atau langsung ke sekolah. Batas waktu pendaftaran adalah 31 Maret 2025. Persyaratan dan formulir dapat diunduh di website kami.",
+    "category": "Kegiatan Anak",
+    "image": null,
+    "author": "Admin",
+    "userId": null,
+    "time": "2025-02-08T10:30:00.000Z"
+  },
+  {
+    "id": 1707456000000,
+    "title": "Acara Outbound Siswa Kelompok B",
+    "description": "Hari ini kami mengadakan kegiatan outbound yang menyenangkan untuk siswa kelompok B. Kegiatan ini dirancang untuk meningkatkan kreativitas, kerjasama, dan kepercayaan diri anak-anak. Terima kasih kepada orang tua yang sudah mendukung kegiatan ini.",
+    "category": "Kegiatan Anak",
+    "image": null,
+    "author": "Admin",
+    "userId": null,
+    "time": "2025-02-07T09:15:00.000Z"
+  },
+  {
+    "id": 1707369600000,
+    "title": "Pelatihan Parenting untuk Orang Tua",
+    "description": "Kami akan mengadakan pelatihan parenting gratis untuk semua orang tua siswa PAUD ATTHOHIRIYYAH. Topik yang akan dibahas adalah bagaimana mengembangkan kecerdasan emosional anak sejak dini. Acara akan diadakan pada hari Sabtu, 15 Februari 2025 pukul 09:00.",
+    "category": "Kegiatan Orang Tua",
+    "image": null,
+    "author": "Admin",
+    "userId": null,
+    "time": "2025-02-06T07:30:00.000Z"
+  },
+  {
+    "id": 1707283200000,
+    "title": "Guru PAUD ATTHOHIRIYYAH Mengikuti Workshop",
+    "description": "Sebagai bagian dari pengembangan profesional, tim guru PAUD ATTHOHIRIYYAH mengikuti workshop tentang metode pembelajaran yang inovatif dan berbasis teknologi. Workshop ini diadakan dalam rangka meningkatkan kualitas pendidikan anak usia dini.",
+    "category": "Artikel",
+    "image": null,
+    "author": "Admin",
+    "userId": null,
+    "time": "2025-02-05T06:45:00.000Z"
+  },
+  {
+    "id": 1770619707280,
+    "title": "adxadsdsad",
+    "description": "asdsadsdasd",
+    "category": "Artikel",
+    "image": "Public/uploads/information/1770619707226-WhatsApp_Image_2026-01-23_at_00.15.53.jpeg",
+    "author": "Admin",
+    "time": "2026-02-09T06:48:27.280Z"
+  },
+  {
+    "id": 1770619928124,
+    "title": "ters",
+    "description": "tersrasesae",
+    "category": "Artikel",
+    "image": null,
+    "author": "Admin",
+    "time": "2026-02-09T06:52:08.124Z"
+  },
+  {
+    "id": 1770620178419,
+    "title": "asdasd",
+    "description": "sadsasaddas",
+    "category": "Artikel",
+    "image": "Public/uploads/information/1770620178393-07489f44-8fbf-4b60-8060-d64dffaae132.jpeg",
+    "author": "Admin",
+    "time": "2026-02-09T06:56:18.419Z"
+  },
+  {
+    "id": 1770621205073,
+    "title": "dsadsadsad",
+    "description": "sadsdsdasssad",
+    "category": "Kegiatan Anak",
+    "image": "Public/uploads/information/1770621205033-fd982143-ad2a-4107-9a98-7baf632198ca.jpeg",
+    "author": "Admin",
+    "time": "2026-02-09T07:13:25.073Z"
+  },
+  {
+    "id": 1770621944293,
+    "title": "aaa",
+    "description": "sada",
+    "category": "Kegiatan Orang Tua",
+    "image": "Public/uploads/information/1770621944273-WhatsApp_Image_2026-01-23_at_00.15.53.jpeg",
+    "author": "Admin",
+    "time": "2026-02-09T07:25:44.293Z"
+  },
+  {
+    "id": 1770622147246,
+    "title": "Wisuda",
+    "description": "dsadsad",
+    "category": "Artikel",
+    "image": "Public/uploads/information/1770622147242-WhatsApp_Image_2026-01-23_at_00.15.53.jpeg",
+    "author": "Admin",
+    "time": "2026-02-09T07:29:07.247Z"
+  }
+]

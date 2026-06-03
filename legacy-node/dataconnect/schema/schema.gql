@@ -1,0 +1,47 @@
+type User @table {
+  email: String!
+  passwordHash: String!
+  role: String!
+  createdAt: Timestamp!
+  firstName: String
+  lastName: String
+  phoneNumber: String
+  address: String
+}
+
+type Student @table {
+  parent: User!
+  firstName: String!
+  lastName: String!
+  dateOfBirth: Date!
+  gender: String!
+  createdAt: Timestamp!
+  allergies: String
+  medicalConditions: String
+}
+
+type Class @table {
+  name: String!
+  description: String!
+  ageGroup: String!
+  capacity: Int!
+  schedule: String!
+  createdAt: Timestamp!
+  tuitionFee: Float
+}
+
+type Registration @table {
+  student: Student!
+  class: Class!
+  applicationDate: Timestamp!
+  status: String!
+  paymentStatus: String
+}
+
+type Document @table {
+  student: Student!
+  fileName: String!
+  fileUrl: String!
+  documentType: String!
+  uploadedAt: Timestamp!
+}

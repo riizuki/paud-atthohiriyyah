@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "neneng@paud.id",
+      "password": "$2b$10$JqQMh/3bUvH0V2zZ7LKSUeLHzR3LdRPBz6HZV8HkEVrrO6kpTxAoq",
+      "role": "guru",
+      "avatar": null,
+      "account_id": "G1770120840133",
+      "name": "Bu Neneng"
+    },
+    {
+      "id": 2,
+      "email": "renisriwahyuni@paud.id",
+      "password": "$2b$10$q9abkpAHiIygMtu.bMGroOrCW43Uo8RaTLSfs3K3UG6Jn61ftcbqK",
+      "role": "guru",
+      "avatar": null,
+      "account_id": "G1770132605252",
+      "name": "Bu Reni Sriwahyuni"
+    }
+  ],
+  "messages": []
+}

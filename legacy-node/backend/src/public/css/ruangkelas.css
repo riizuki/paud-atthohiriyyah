@@ -1,0 +1,398 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* === HEADER === */
+.paud-header {
+  background-color: #082b59;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  position: relative;
+  z-index: 1000;
+  border-bottom: 2px solid #FFDE00;
+}
+
+.paud-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.paud-logo img {
+  height: 32px;
+  margin-right: 10px;
+}
+
+.paud-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.paud-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.paud-nav a:hover {
+  color: #FFDE00;
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-social {
+  display: none;
+  position: absolute;
+  background-color: #051f40;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1001;
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-container:hover .dropdown-social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown-social a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.dropdown-social a:hover {
+  color: #FFDE00;
+}
+
+.paud-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.paud-divider {
+  color: #FFDE00;
+  font-size: 18px;
+}
+
+.header-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.header-icon:hover {
+  transform: scale(1.2);
+}
+
+/* === MAIN CONTENT === */
+.main-content {
+  padding: 0;
+  background: #ffffff;
+  min-height: calc(100vh - 200px);
+}
+
+/* === COVER SECTION === */
+.sambutan-section {
+  padding: 0;
+  background: #ffffff;
+  position: relative;
+}
+
+.cover-container {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: visible;
+  border-radius: 0 0 30px 30px;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0 0 30px 30px;
+}
+
+.profile-overlap {
+  position: absolute;
+  bottom: -80px;
+  left: 50px;
+  z-index: 10;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 6px solid white;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+/* === SAMBUTAN CONTENT WRAPPER === */
+.sambutan-content-wrapper {
+  padding: 120px 40px 60px 40px;
+  background-color: #ffffff;
+}
+
+.sambutan-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sambutan-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 30px 0;
+}
+
+.sambutan-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.sambutan-nama {
+  font-size: 18px;
+  font-weight: 600;
+  color: #082b59;
+  margin: 0 0 10px 0;
+}
+
+.sambutan-teks {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sambutan-teks p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin: 0;
+  text-align: justify;
+}
+
+.sambutan-teks p.closing {
+  margin-top: 20px;
+  font-weight: 600;
+  text-align: right;
+  color: #082b59;
+}
+
+/* === FOOTER === */
+.paud-footer {
+  background-color: #082b59;
+  color: #fff;
+  padding: 40px 80px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  border-top: 2px solid #FFDE00;
+  margin-top: 60px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  color: #FFDE00;
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #FFDE00;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  display: inline-block;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+  filter: invert(39%) sepia(99%) saturate(4545%) hue-rotate(347deg) brightness(98%) contrast(99%);
+}
+
+.footer-hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 30px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  gap: 20px;
+}
+
+.footer-policy {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-policy a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-policy a:hover {
+  color: #FFDE00;
+}
+
+.footer-rights p {
+  margin: 0;
+  color: #aaa;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 900px) {
+  .cover-container {
+    height: 300px;
+  }
+
+  .profile-overlap {
+    bottom: -70px;
+    left: 30px;
+  }
+
+  .profile-image {
+    width: 160px;
+    height: 160px;
+  }
+
+  .sambutan-content-wrapper {
+    padding: 110px 30px 60px 30px;
+  }
+
+  .sambutan-title {
+    font-size: 24px;
+  }
+
+  .paud-footer {
+    padding: 30px 40px;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .paud-nav {
+    display: none;
+  }
+
+  .cover-container {
+    height: 250px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .cover-image {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .profile-overlap {
+    bottom: -60px;
+    left: 20px;
+  }
+
+  .profile-image {
+    width: 140px;
+    height: 140px;
+    border-width: 5px;
+  }
+
+  .sambutan-content-wrapper {
+    padding: 100px 20px 40px 20px;
+  }
+
+  .sambutan-container {
+    max-width: 100%;
+  }
+
+  .sambutan-title {
+    font-size: 20px;
+  }
+
+  .sambutan-nama {
+    font-size: 16px;
+  }
+
+  .sambutan-teks p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .paud-footer {
+    padding: 20px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}

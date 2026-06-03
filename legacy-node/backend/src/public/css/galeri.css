@@ -1,0 +1,560 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: rgb(255, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+
+/* === HEADER === */
+.paud-header {
+  background-color: #082b59; /* match index */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+.paud-logo {
+  display: flex;
+  align-items: center;
+}
+
+.paud-logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.paud-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.paud-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.paud-nav a:hover {
+  color: #FFDE00;
+}
+
+.paud-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.paud-divider {
+  color: white;
+  font-weight: bold;
+}
+
+/* === ICON HEADER GANTI IMG === */
+.header-icon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.2s ease, filter 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+
+.header-icon:hover {
+  transform: scale(1.2);
+  filter: invert(39%) sepia(99%) saturate(4545%) hue-rotate(347deg) brightness(98%) contrast(99%);
+}
+
+/* === PROMO BAR === */
+.promo-bar {
+  background-color: #ffffff; /* match index */
+  font-weight: bold;
+  padding: 10px 0;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #082b59;
+}
+
+.promo-bar:hover {
+  background-color: #FFDE00;
+}
+
+/* === SEARCH BOX === */
+.search-box {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #1c1c1c;
+  padding: 10px;
+  display: none;
+  border: 1px solid #555;
+  animation: fadeIn 0.3s ease forwards;
+  width: 400px;
+  z-index: 999;
+}
+
+.search-box input {
+  width: 90%;
+  padding: 10px;
+  background-color: #333;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.search-box .close-search {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === DROPDOWN MENU === */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  right: 20px;
+  top: 40px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown a:hover {
+  background-color: #FFDE00;
+}
+
+/* === SWIPER SLIDER === */
+.swiper {
+  width: 100vw;
+  height: 85vh;
+  position: relative;
+  z-index: 1;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === CONTENT SECTIONS === */
+.description, .section {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.full-width-section {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 40px 0;
+}
+
+.description h1 {
+  font-size: 36px;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* === COMMUNITY DROPDOWN === */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-container > a {
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown-social {
+  display: none;
+  position: absolute;
+  background-color: #051f40;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1001;
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown-container:hover .dropdown-social,
+.dropdown-container:focus-within .dropdown-social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown-social a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  display: block;
+  white-space: nowrap;
+  padding: 2px 0;
+}
+
+.dropdown-social a:hover {
+  color: #FFDE00;
+}
+
+/* === SECTION BACKGROUND === */
+#recent-releases {
+  background-image: url('img/recentrelease.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.recent-releases img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#paud-in-action {
+  background-image: url('img/LifeAfter.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#paud-universe {
+  background-image: url('img/rog_landscape.jpg');
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: auto;
+  padding: 50px;
+  box-sizing: border-box;
+  text-align: right;
+  background-size: cover;
+  color: white;
+}
+
+#paud-universe .paud-universe div {
+  max-width: 600px;
+  text-align: right;
+}
+
+#paud-universe .paud-universe h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+#paud-universe .paud-universe p {
+  font-size: 18px;
+  font: center;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* === FOOTER === */ 
+.paud-footer {
+  background-color: #034F20;
+  color: #fff;
+  padding: 20px 40px;
+  text-justify: center;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(5, auto); 
+  justify-content: start;
+  align-items: start;
+  gap: 40px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #FFDE00; 
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.footer-social img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1); 
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+  filter: invert(39%) sepia(99%) saturate(4545%) hue-rotate(347deg) brightness(98%) contrast(99%);
+}
+
+.footer-subscribe {
+  text-align: right;
+}
+
+.footer-subscribe h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3px;
+} 
+
+.subscribe-form input {
+  padding: 8px;
+  height: 20px;
+  width: 200px;
+  background-color: #white;
+  border: 1px solid #444;
+  color: #black;
+  font-size: 15px;
+} 
+
+.subscribe-form button {
+  background-color: #FFDE00;
+  color: #000000;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background 0.3s ease;
+} 
+
+.subscribe-form button:hover {
+  background-color: #b3000e;
+} 
+
+.paud-footer hr {
+  border: none;
+  border-top: 1px solid #FFDE00;
+  margin: 15px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  gap: 10px;
+}
+
+.footer-rights p { color: #FFDE00; }
+
+.footer-policy a {
+  margin: 0 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-policy a:hover {
+  color: #FFDE00;
+}
+
+.footer-rights p {
+  margin: 0;
+  color: #FFDE00;
+  font-size: 13px;
+}
+
+/* === GALERI === */
+.gallery {
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.gallery h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.post {
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.post:hover {
+  transform: scale(1.05);
+}
+
+/* Upload card */
+.upload-card { display:flex; align-items:center; justify-content:center; min-height:260px; cursor:pointer }
+.upload-card .upload-inner{ text-align:center; color:#fff }
+.upload-btn{ width:84px; height:84px; border-radius:50%; font-size:40px; background: rgba(255,222,0,0.95); border:none; color:#082b59; cursor:pointer }
+.upload-hint{ margin-top:12px; color:#ddd }
+
+/* Upload modal overrides */
+.upload-modal .modal-content{ background:#fff; color:#222 }
+.upload-modal input[type=file]{ display:block }
+.upload-modal label{ font-weight:600 }
+.upload-modal .muted{ color:#666 }
+
+.post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 15px;
+}
+
+.post h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+.post p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Modal for post detail */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.modal img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.modal h3 {
+  margin-top: 0;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Responsif */
+@media (max-width: 900px) {
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer-subscribe {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .subscribe-form {
+    justify-content: flex-start;
+  }
+
+  .subscribe-form input {
+    width: 100%;
+  }
+}
+
+/* Admin controls on posts */
+.post { position: relative; }
+.admin-controls { position: absolute; top: 8px; right: 8px; display:flex; gap:6px; z-index:2; }
+.admin-controls button { background: rgba(0,0,0,0.6); color: #fff; border: none; padding: 6px 8px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+.edit-modal .modal-content { background:#fff; color:#222; }
+.edit-modal input, .edit-modal textarea { width:100%; padding:8px; margin-top:6px; border:1px solid #ccc; border-radius:4px; }
